@@ -1,0 +1,549 @@
+:root {
+    --My-background-color-rgb: rgb(0, 0, 0);
+    --My-background-color-rgba: rgba(0, 0, 0, 0.83);
+    --My-color-white-rgb: rgb(255, 255, 255);
+    --My-background-color-khakestary-rgba: rgba(175, 175, 175, 0.555);
+    --My-color-yellow: rgb(255, 242, 0);
+    --My-color-black-rgb: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    /* style the body background */
+        section.background {
+            background-image: url(./vector/1541262-وکتور-کاغذ-دیواری-بدون-درز-گل.jpg);
+            position: fixed;
+            width: 104%;
+            height: 914px;
+            transform: translate(-13px, 0);
+            filter: opacity(0.15);
+        }
+    /* style the body background */
+
+    /* style the header item */
+        header > nav.nav {
+            width: 100%;
+            height: 78px;
+            position: fixed;
+            transform: translate(-9px, -9px);
+            background-color: var(--My-background-color-rgba);
+            z-index: 1;
+        }
+        nav.nav > div.logo-and-icon-control {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav.nav div.logo-and-icon-control > img {
+            width: 50px;
+        }
+        nav.nav div.logo-and-icon-control > img.logo {
+            width: 104px;
+            height: 70px;
+            position: relative;
+            right: 4px;
+            top: 4px;
+        }
+        nav.nav div.logo-and-icon-control > img.btn-item-control {
+            width: 84px;
+            position: relative;
+            right: 13px;
+            bottom: 3px;
+        }
+        /* style the btn item and btn container */
+            div.btn-item {
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                transform: translate(14px, -82px);
+            }
+            div.btn-item > div.btn-list-container {
+                position: fixed;
+                width: 203px;
+                height: 917px;
+                background-color: var(--My-background-color-rgb);
+                transform: translate(215px, 0);
+                animation-name: btn-conatainer-off;
+                animation-duration: 1s;
+            }
+            @keyframes btn-container-off {
+                0%{
+                    position: fixed;
+                    transform: translate(0, 0);
+                }
+                100%{
+                    position: fixed;
+                    transform: translate(202px, 0);
+                }
+            }
+            /* style a javascript the element */
+                div.btn-list-container-On {
+                    width: 283px;
+                    height: 917px;
+                    background-color: var(--My-background-color-rgb);
+                    position: fixed;
+                    transform: translate(0, 0);
+                    animation-name: btn-container-on;
+                    animation-duration: 1s;
+                }
+                @keyframes btn-container-on {
+                    0%{
+                        position: fixed;
+                        width: 283px;
+                        height: 917px;
+                        background-color: var(--My-background-color-rgb);
+                        transform: translate(270px, 0);
+                    }
+                    100%{
+                        position: fixed;
+                        width: 283px;
+                        height: 917px;
+                        background-color: var(--My-background-color-rgb);
+                        transform: translate(0, 0);
+                    }
+                }
+                div.btn-list-container-Off {
+                    width: 283px;
+                    height: 917px;
+                    background-color: var(--My-background-color-rgb);
+                    position: fixed;
+                    transform: translate(270px, 0);
+                    animation-name: btn-container-off;
+                    animation-duration: 1s;
+                }
+                @keyframes btn-container-off {
+                    0%{
+                        position: fixed;
+                        width: 283px;
+                        height: 917px;
+                        background-color: var(--My-background-color-rgb);
+                        transform: translate(0, 0);
+                    }
+                    100%{
+                        position: fixed;
+                        width: 283px;
+                        height: 917px;
+                        background-color: var(--My-background-color-rgb);
+                        transform: translate(270px, 0);
+                    }
+                }
+            /* style a javascript the element */
+            div.btn-list-container > ul.btn-list-item,
+            div.btn-list-container-On > ul.btn-list-item,
+            div.btn-list-container-Off > ul.btn-list-item {
+                list-style-type: none;
+                direction: rtl;
+                position: relative;
+                transform: translate(21px, 0);
+            }
+            div.btn-list-container ul.btn-list-item > li,
+            div.btn-list-container-On ul.btn-list-item > li,
+            div.btn-list-container-Off ul.btn-list-item > li {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 21px;
+                font-weight: 500;
+                color: var(--My-color-white-rgb);
+                margin-top: 46px;
+            }
+            /* style the btn back */
+                div.btn-back-control {
+                    position: relative;
+                    top: 30px;
+                }
+                div.btn-back-control > p.back-text {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: var(--My-color-yellow);
+                    text-align: center;
+                }
+                div.btn-back-control > div.img-back-control {
+                    display: flex;
+                    justify-content: center;
+                }
+                div.btn-back-control div.img-back-control > img {
+                    width: 30px;
+                    animation-name: img-back-animation;
+                    animation-duration: 1s;
+                    animation-iteration-count: infinite;
+                }
+                @keyframes img-back-animation {
+                    0%{
+                        filter: opacity(0);
+                    }
+                    50%{
+                        filter: opacity(1);
+                    }
+                    100%{
+                        filter: opacity(0);
+                    }
+                }
+            /* style the btn back */
+        /* style the btn item and btn container */
+    /* style the header item */
+
+    /* style the flash goto beugerafi */
+        div.flash-coontrol {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            transform: translate(0, 93px);
+            animation-name: flash-on;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        div.flash-coontrol > img.flash {
+            width: 69px;
+            transform: rotate(180deg);
+        }
+        @keyframes flash-on {
+            0%{
+                position: relative;
+                transform: translate(0, 93px);
+                filter: opacity(1);
+            }
+            100%{
+                position: relative;
+                transform: translate(0, 160px);
+                filter: opacity(0);
+            }
+            /* 100%{
+                position: relative;
+                transform: translate(0, 130px);
+                filter: opacity(0);
+            } */
+        }
+    /* style the flash goto beugerafi */
+
+    /* style the item two (photos and beu zendegi resome text) */
+        section.two-item-cntainer {
+            width: 100%;
+            position: relative;
+            top: 157px;
+        }
+        section.two-item-cntainer > p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 21px;
+            font-weight: 500;
+            color: var(--My-color-black-rgb);
+            text-align: center;
+        }
+        section.two-item-cntainer div.img-container {
+            display: flex;
+            justify-content: center;
+        }
+        section.two-item-cntainer div.img-container > img {
+            width: 162px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px var(--My-background-color-rgba);
+            margin: 5px;
+        }
+        section.two-item-cntainer div.img-container > img.img1 {
+            display: none;
+        }
+    /* style the item two (photos and beu zendegi resome text) */
+
+    /* style the usernametext and beutext */
+        div.username-and-beutext-container {
+            width: 100%;
+            position: relative;
+            transform: translate(0, 159px);
+        }
+        div.username-and-beutext-container > p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--My-color-black-rgb);
+            font-weight: 500;
+            text-align: center;
+        }
+        div.username-and-beutext-container > p.username {
+            font-size: 16px;
+        }
+        div.username-and-beutext-container > p.beutext {
+            font-size: 20px;
+            line-height: 36px;
+        }
+    /* style the usernametext and beutext */
+
+    /* style the item three photo */
+        div.photo-item-three-control {
+            width: 100%;
+            position: relative;
+            transform: translate(0, 198px);
+        }
+        div.photo-item-three-control > div.img-control {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        div.photo-item-three-control div.img-control > img.img {
+            width: 162px;
+            border-radius: 20px;
+        }
+        div.photo-item-three-control > h4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            line-height: 0;
+            color: var(--My-color-black-rgb);
+            text-align: center;
+        }
+    /* style the item three photo */
+
+    /* style the beulist */
+        div.beu-list-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            transform: translate(0, 230px);
+        }
+        div.beu-list-container > div.beu-list-bg {
+            width: 80%;
+            height: 234px;
+            background-color: var(--My-background-color-rgba);
+            border-radius: 20px;
+        }
+        div.beu-list-container div.beu-list-bg > ul {
+            list-style-type: none;
+            direction: rtl;
+            position: relative;
+            left: 29px;
+        }
+        div.beu-list-container div.beu-list-bg ul > li, div.beu-list-bg ul li > span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 19px;
+            font-weight: 500;
+            color: var(--My-color-white-rgb);
+        }
+        div.beu-list-container div.beu-list-bg ul > li {
+            margin-top: 17px;
+        }
+        div.beu-list-container div.beu-list-bg ul li > span {
+            color: var(--My-color-yellow);
+        }
+    /* style the beulist */
+
+    /* style the four item (photos and username) */
+        div.four-item-container {
+            width: 100%;
+            position: relative;
+            transform: translate(0, 250px);
+        }
+        div.four-item-container > div.username-text-control {
+            width: 100%;
+        }
+        div.four-item-container div.username-text-control > h5.username {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            color: var(--My-color-black-rgb);
+            text-align: center;
+            position: relative;
+            top: 12px;
+        }
+        div.four-item-container > div.photos-control {
+            /* width: 100%; */
+            display: flex;
+            justify-content: center;
+        }
+        div.four-item-container div.photos-control > img {
+            width: 190px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+    /* style the four item (photos and username) */
+
+    /* style the resomebox */
+        div.resomebox-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            transform: translate(0, 302px);
+        }
+        div.resomebox-container div.resomebox-control > p.resome-text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            color: var(--My-color-black-rgb);
+            text-align: center;
+            line-height: 5px;
+        }
+        div.resomebox-container div.resomebox-control > hr {
+            outline: none;
+            border: none;
+            width: 140px;
+            height: 2px;
+            background-color: var(--My-background-color-rgb);
+        }
+        div.resomebox-control > div.resomebox-item-control {
+            height: 400px;
+            overflow-y: scroll;
+        }
+        table.table-resome-box tr > th, td.td {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--My-background-color-rgba);
+            border-radius: 8px;
+            color: var(--My-color-white-rgb);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 14px;
+            text-align: center;
+            margin: 5px;
+        }
+        td.td {
+            color: var(--My-color-black-rgb);
+            background-color: var(--My-background-color-khakestary-rgba);
+            position: relative;
+            top: 5px;
+        }
+    /* style the resomebox */
+
+    /* style the photoslider item */
+        div.photo-slider-item-container {
+            position: relative;
+            transform: translate(0, 400px);
+        }
+        div.photoslider-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        div.photoslider-container > div.photo-control {
+            width: 300px;
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            border-top: 2px solid var(--My-background-color-rgb);
+            border-bottom: 2px solid var(--My-background-color-rgb);
+            border-radius: 20px;
+        }
+        div.photoslider-container div.photo-control > img.photoslid {
+            width: 229px;
+            height: 238px;
+            border-radius: 20px;
+            position: relative;
+            top: 20px;
+        }
+        div.btn-next-and-perevi-container-asli {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            transform: translate(0, -160px);
+        }
+        div.btn-next-and-perevi-container {
+            width: 377px;
+        }
+        div.btn-next-and-perevi-container > div.btn-next-and-perevius-control {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        div.btn-next-and-perevi-container div.btn-next-and-perevius-control > svg {
+            width: 35px;
+        }
+    /* style the photoslider item */
+
+
+    /* style the footer item */
+        div.footer-item-control {
+            position: relative;
+            transform: translate(0, 415px);
+        }
+        div.goto-top-item-control {
+            width: 100%;
+            position: relative;
+            transform: translate(0, 32px);
+        }
+        div.goto-top-item-control > div.flashe-goto-top-control {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            transform: translate(0, 16px);
+            animation-name: img-on;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        div.goto-top-item-control div.flashe-goto-top-control > svg.goto-top-img {
+            width: 39px;
+            transform: rotate(-90deg);
+        }
+        /* set the animation a svg gototop */
+            @keyframes img-on {
+                0%{
+                    position: relative;
+                    transform: translate(0, 16px);
+                }
+                25%{
+                    position: relative;
+                    transform: translate(0, -5px);
+                }
+                50%{
+                    position: relative;
+                    transform: translate(0, 16px);
+                }
+                75%{
+                    position: relative;
+                    transform: translate(0, 10px);
+                }
+                100%{
+                    position: relative;
+                    transform: translate(0, 16px);
+                }
+            }
+        /* set the animation a svg gototop */
+        div.goto-top-item-control > p.goto-top-text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--My-color-black-rgb);
+            text-align: center;
+            font-weight: 500;
+            font-size: 19px;
+        }
+        div.footer-item-control > div.footer-bg-control {
+            position: relative;
+            transform: translate(-9px, 49px);
+        }
+        div.footer-item-control div.footer-bg-control > div.bg-footer {
+            width: 102.5%;
+            height: 183px;
+            background-color: var(--My-color-black-rgb);
+        }
+        /* style the rahertebati item */
+            div.rahe-ertebati-container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+            }
+            div.rahe-ertebati-container > div.rahe-ertebati-control {
+                display: flex;
+            }
+            div.rahe-ertebati-control div.instagram-item > p.inategram-text,
+            div.rahe-ertebati-control div.telegram-item > p.telegrem-text,
+            div.rahe-ertebati-control div.phon-number-item > p.phon-number-text {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 15px;
+                color: var(--My-color-white-rgb);
+                text-align: center;
+            }
+            div.rahe-ertebati-control div.instagram-item > p.address,
+            div.rahe-ertebati-control div.telegram-item > p.address,
+            div.rahe-ertebati-control div.phon-number-item > p.phon-number {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: var(--My-color-yellow);
+                text-align: center;
+            }
+            div.rahe-ertebati-control > div.instagram-item,
+            div.rahe-ertebati-control > div.telegram-item,
+            div.rahe-ertebati-control > div.phon-number-item {
+                padding: 15px;
+            }
+            div.footer-bg-control div.bg-footer > h3.site-text {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: rgba(101, 101, 101);
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+        /* style the rahertebati item */
+    /* style the footer item */
+
+}
